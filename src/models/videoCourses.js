@@ -56,6 +56,11 @@ const AddVideoCourseSchema = new mongoose.Schema({
     type: audio,
     required: true,
   },
+  package: {
+    type: string,
+    required: true,
+    default: 'free',
+  },
 });
 
 export default mongoose.model("addVideoCourse", AddVideoCourseSchema);
